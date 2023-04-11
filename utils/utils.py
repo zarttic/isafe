@@ -10,11 +10,12 @@ def trim(ss):
 def isp(n):
     fl = 1
     for i in range(2, n):
-        if n % 2 == 0:
+        if n % i == 0:
             fl = 0
             break
 
     return fl
+
 
 def stoi(s):
     return ord(s) - ord('0')
